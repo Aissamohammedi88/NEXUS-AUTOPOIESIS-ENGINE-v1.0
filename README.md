@@ -61,5 +61,12 @@ L'orchestrateur gère dynamiquement les pipelines de compilation pour les langag
 L'outil nécessite les compilateurs natifs pour exécuter les benchmarks réels :
 ```bash
 saas-generator polyglot rust cobol python javascript local-first sovereign-software compiler-benchmark developer-tools nexus-quantum semantic-architecture
+🧬 Signé
+
+Aissa Mohammedi (DGK)
+Fondateur de Nexus Quantum — Architecte Systémique
+"La vraie souveraineté ne consiste pas à s'isoler, mais à avoir le pouvoir de choisir son architecture."
+
+https://img.shields.io/badge/LinkedIn-Aissa_Mohammedi-0A66C2?style=flat-square&logo=linkedin
 sudo apt update
 sudo apt install -y python3 rustc nodejs gnucobol
