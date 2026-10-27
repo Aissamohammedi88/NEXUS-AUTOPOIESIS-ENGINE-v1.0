@@ -60,5 +60,6 @@ L'orchestrateur gère dynamiquement les pipelines de compilation pour les langag
 ### Prérequis (Linux Mint / Ubuntu)
 L'outil nécessite les compilateurs natifs pour exécuter les benchmarks réels :
 ```bash
+saas-generator polyglot rust cobol python javascript local-first sovereign-software compiler-benchmark developer-tools nexus-quantum semantic-architecture
 sudo apt update
 sudo apt install -y python3 rustc nodejs gnucobol
