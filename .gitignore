@@ -1,18 +1,118 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# ═══════════════════════════════════════════════════════════════════
+# NEXUS POLYGLOT SAAS GENERATOR — .gitignore
+# Auteur : Aissa Mohammedi (DGK) — Nexus Quantum
+# ═══════════════════════════════════════════════════════════════════
 
-# Other files and folders
-.settings/
+# --- SYSTÈME D'EXPLOITATION & ÉDITEURS ---
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# --- PYTHON (Générateur principal) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# Environnements virtuels
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+# --- RUST (Moteur de compilation) ---
+target/
+**/*.rs.bk
+*.pdb
+Cargo.lock
+
+# --- NODE.JS (Frontend / Modules JS) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+dist/
+build/
+.next/
+out/
+.nuxt/
+.cache/
+
+# --- COBOL (Fichiers compilés) ---
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.cob~
+*.cbl~
+*.cpy~
+*.lst
+
+# --- ARTEFACTS DE COMPILATION & BENCHMARKS (Générés localement) ---
+# Le projet génère des binaires et des rapports de benchmark locaux.
+# Ils ne doivent pas polluer le dépôt Git.
+benchmarks/
+*.bench
+*.profile
+*.log
+generated_workspace/
+nexus_builder_workspace/
+exports/
+logs/
+tmp/
+cache/
+*.tar.xz
+*.tar.gz
+
+# --- BASES DE DONNÉES & FICHIERS SENSIBLES (Souveraineté) ---
+*.db
+*.sqlite3
+*.sqlite
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt
+secrets.json
+config.local.json
+
+# --- FICHIERS DE CERTIFICATS GÉNÉRÉS ---
+*.cert
+*.certificate
+cert_*.txt
